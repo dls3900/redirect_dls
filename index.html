@@ -5,10 +5,45 @@
     </head>
     <body>
 <style>
-    body{
-        background-color: black;
-    }
+   body{
+        background-color: transparent;
+        background: linear-gradient(218.78deg, #000000 33.97%, hsl(0, 100%, 11%) 100.71%);
+       background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      }
+    
+.loader{
+   color: rgb(0, 0, 0);
+   left: 47%;
+   top: 48%;
+   width: 40px;
+   height: 40px;
+   border-color: rgba(255, 255, 255, 0.05);
+   border-top: 5px solid #ffffff;
+   border-left: 5px solid #ffffff;
+   border-radius: 50%;
+   animation: spin 1s linear infinite;
+   position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+   bottom: 2px;
+   background-color: rgb(0, 0, 0);
+   backdrop-filter: blur(3px);
+   outline: none;
+ }
+ @keyframes spin {
+   0% { 
+     transform: rotate(0deg); 
+   }
+   100% { 
+     transform: rotate(360deg); 
+   }
 </style>
+        <div class="center">
+<button class="loader"></button></div>
     </body>
     <script>
         let my_url = "http://dls.42web.io/"
